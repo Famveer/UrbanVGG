@@ -4,12 +4,30 @@ Explaining urban safety perception through visual features. [Paper](https://fmor
 
 # Requirements
 
-- **Python**>=3.9
+- **Python**>=3.12
 
 # Installation
 ```
   pip install -r requirements.txt
 ```
+
+# Data
+
+Obtain the Place Pulse 1.0 dataset [here](https://drive.google.com/drive/folders/1R1AcUP9IN2IwyY280v98vtJBS17N3IxJ?usp=sharing).
+
+### Data Preparation
+
+* Download images and `scores.csv`.  
+* Create a `.env` file, and add the path of the data downloaded and models.  
+  ```
+    DATA_PATH=/path_to/datasets/
+    MODEL_PATH=/path_to/models/
+  ```
+* First, run the notebook `notebooks/Data/Organize_Information.ipynb`.  
+  Then, run the notebook `notebooks/Data/Statistics.ipynb`.  
+  Next, run the notebook `notebooks/Data/Feature_Extraction.ipynb`.  
+
+* Train models running `notebooks/Models/`.  
 
 # Citation
 
