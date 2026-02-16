@@ -215,6 +215,14 @@ class LinearClassifier():
             print(f"Best Score: {self.best_model[1]['best_score']:.4f}")
             print(f"{'='*80}")
     
+    def get_best_model_name(self):
+        """Return the best performing model."""
+        if not self.best_model:
+            print("No results available. Run fit_all() first.")
+            return None
+        
+        return self.best_model[0]
+    
     def get_best_model(self):
         """Return the best performing model."""
         if not self.best_model:
