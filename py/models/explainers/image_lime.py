@@ -9,7 +9,7 @@ from typing import Union, List, Optional, Callable
 from pathlib import Path
 from PIL import Image
 
-class LIME:
+class ImageLIME:
     """LIME explanation for VGG16 model."""
     
     def __init__(self, model, class_names=None):
