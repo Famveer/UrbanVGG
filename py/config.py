@@ -14,7 +14,7 @@ class Config(BaseSettings):
     BATCH_SIZE: int = int(os.getenv('BATH_SIZE', "256"))
     NUM_EPOCHS: int = int(os.getenv('NUM_EPOCHS', "50"))
     
-    PRECEPTION_METRIC: str = os.getenv('PRECEPTION_METRIC', "safety")
+    PERCEPTION_METRIC: str = os.getenv('PERCEPTION_METRIC', "safety")
     CITY_STUDIED: str = os.getenv('CITY_STUDIED', "New York")
     YEAR_STUDIED: int = int(os.getenv('YEAR_STUDIED', "2011"))
     DELTA: float  = float(os.getenv('DELTA', "0.42"))
