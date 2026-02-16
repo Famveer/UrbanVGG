@@ -28,6 +28,7 @@ Obtain the Place Pulse 1.0 dataset [here](https://drive.google.com/drive/folders
   Next, run the notebook `notebooks/Data/Feature_Extraction.ipynb`.  
 
 * Train models running `notebooks/Models/`.  
+  Then, run explanations `notebooks/Explanations/`.  
 
 # Citation
 

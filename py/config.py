@@ -10,7 +10,9 @@ class Config(BaseSettings):
     MODEL_PATH: str = os.getenv('MODEL_PATH')
 
     ML_TASK: str = os.getenv('ML_TASK', "classifications")
-    MODEL_FEATURE_NAME: str = os.getenv('MODEL_TASK_NAME', "vgg16")
+    MODEL_FEATURE_NAME: str = os.getenv('MODEL_TASK_NAME', "vgg16_mlp")
+    BATCH_SIZE: int = int(os.getenv('BATH_SIZE', "256"))
+    NUM_EPOCHS: int = int(os.getenv('NUM_EPOCHS', "50"))
     
     PRECEPTION_METRIC: str = os.getenv('PRECEPTION_METRIC', "safety")
     CITY_STUDIED: str = os.getenv('CITY_STUDIED', "New York")
