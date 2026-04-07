@@ -76,12 +76,12 @@ class LinearClassifier():
                 'model': SVC(
                     tol=1e-3,
                     random_state=self.random_state,
-                    max_iter=1000,
+                    max_iter=100,
                 ),
                 'params': {
                     'classifier__C': np.logspace(-2, 2, num=5),
                     'classifier__class_weight': [None, 'balanced'],
-                    'classifier__gamma': ['scale', 'auto', 1, 0.1, 0.01, 0.001, 0.0001],
+                    'classifier__gamma': ['scale', 'auto', 1, 0.1, 0.01],
                     'classifier__kernel': ['linear', 'rbf']
                 }
             }
